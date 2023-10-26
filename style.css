@@ -1,0 +1,10 @@
+.menu-btn{
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 3px;
+}
+.menu-btn:hover{
+    border: 1px solid rgba(126, 126, 126, 0.055);
+}
+.menu-btn:active{
+    border: 1px solid rgba(126, 126, 126, 0.055);
+}
