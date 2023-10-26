@@ -8,3 +8,10 @@
 .menu-btn:active{
     border: 1px solid rgba(126, 126, 126, 0.055);
 }
+a:link{
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: underline;
+}
