@@ -1,5 +1,9 @@
 <?php
+include "config.php";
 include "header.php";
+
+$sql="SELECT * FROM post";
+$result=$result = mysqli_query($conn, $sql) or die("Query Failed");
 ?>
       <div class="container mt-4 ">
         <div class="row">
@@ -10,6 +14,9 @@ include "header.php";
             <a class="btn btn-info" href="add-post.php">Add New Post</a>
         </div>
         <div class="col-lg-12 mt-4">
+          <?php
+          if(mysqli_num_rows($result)>0){
+          ?>
         <table class="table table-hover">
     <thead>
       <tr>
@@ -77,6 +84,9 @@ include "header.php";
       
     </tbody>
   </table>
+  <?php
+          }
+  ?>
         </div>
         </div>
 
