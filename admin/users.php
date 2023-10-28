@@ -1,23 +1,22 @@
 <?php
 include "header.php";
 ?>
-      <div class="container mt-4 ">
-        <div class="row">
+<div class="container mt-4 ">
+<div class="row">
         <div class="col-lg-10">
-            <h3>All Posts</h3>
+            <h3>All Users</h3>
         </div>
         <div class="col-lg-2 d-flex justify-content-end">
-            <a class="btn btn-info" href="add-post.php">Add New Post</a>
+        <a class="btn btn-info" href="add-user.php">Add New User</a>
         </div>
         <div class="col-lg-12 mt-4">
         <table class="table table-hover">
     <thead>
       <tr>
         <th class="col-lg-1">Sl No.</th>
-        <th class="col-lg-4">Title</th>
-        <th class="col-lg-2">Category</th>
-        <th class="col-lg-2">Date</th>
-        <th class="col-lg-1">Author</th>
+        <th class="col-lg-4">Name</th>
+        <th class="col-lg-3">User Name</th>
+        <th class="col-lg-2">Role</th>
         <th class="col-lg-1">Edit</th>
         <th class="col-lg-1">Delete</th>
         
@@ -26,53 +25,43 @@ include "header.php";
     <tbody>
       <tr>
         <td>01</td>
-        <td>GITA is the best College in Bhubaneswar</td>
-        <td>MBA</td>
-        <td>12 Aug 2023</td>
-        <td>Admin</td>
-        <td><i class="fa-regular fa-pen-to-square"></i></td>
-        <td><i class="fa-solid fa-trash-can"></i></td>
-
-      </tr>
-      <tr>
-        <td>01</td>
-        <td>GITA is the best College in Bhubaneswar</td>
-        <td>MBA</td>
-        <td>12 Aug 2023</td>
+        <td>Rajanikanta Biswal</td>
+        <td>rajanikantabiswal</td>
         <td>Admin</td>
         <td class=""><i class="fa-regular fa-pen-to-square"></i></td>
         <td><i class="fa-solid fa-trash-can"></i></td>
-
       </tr>
       <tr>
         <td>01</td>
-        <td>GITA is the best College in Bhubaneswar</td>
-        <td>MBA</td>
-        <td>12 Aug 2023</td>
+        <td>Rajanikanta Biswal</td>
+        <td>rajanikantabiswal</td>
         <td>Admin</td>
         <td class=""><i class="fa-regular fa-pen-to-square"></i></td>
         <td><i class="fa-solid fa-trash-can"></i></td>
-
       </tr>
       <tr>
         <td>01</td>
-        <td>GITA is the best College in Bhubaneswar</td>
-        <td>MBA</td>
-        <td>12 Aug 2023</td>
+        <td>Rajanikanta Biswal</td>
+        <td>rajanikantabiswal</td>
         <td>Admin</td>
         <td class=""><i class="fa-regular fa-pen-to-square"></i></td>
         <td><i class="fa-solid fa-trash-can"></i></td>
-
       </tr>
       <tr>
         <td>01</td>
-        <td>GITA is the best College in Bhubaneswar</td>
-        <td>MBA</td>
-        <td>12 Aug 2023</td>
+        <td>Rajanikanta Biswal</td>
+        <td>rajanikantabiswal</td>
         <td>Admin</td>
         <td class=""><i class="fa-regular fa-pen-to-square"></i></td>
         <td><i class="fa-solid fa-trash-can"></i></td>
-
+      </tr>
+      <tr>
+        <td>01</td>
+        <td>Rajanikanta Biswal</td>
+        <td>rajanikantabiswal</td>
+        <td>Admin</td>
+        <td class=""><i class="fa-regular fa-pen-to-square"></i></td>
+        <td><i class="fa-solid fa-trash-can"></i></td>
       </tr>
       
     </tbody>
@@ -100,7 +89,7 @@ include "header.php";
             </nav>
           </div>
           <!-- Pagination End -->
-      </div>
+</div>
 <?php
 include "../footer.php";
 ?>
