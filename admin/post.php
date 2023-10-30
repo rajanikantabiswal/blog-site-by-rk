@@ -46,8 +46,18 @@ $result=$result = mysqli_query($conn, $sql) or die("Query Failed");
         <td><?php echo $row['date']?></td>
         <td><?php echo $row['author']?></td>
         <td><a href='update-post.php?id=<?php echo $row['post_id'] ?>'><i class="fa-regular fa-pen-to-square"></i></a></td>
-        <td><i class="fa-solid fa-trash-can" data-bs-toggle="modal" data-bs-target="#myModal"></i></td>
+        <td>
+          <form>
+            <input type="text" id="cat_id" name="cat_id" value="<?php echo $row['post_id'] ?>">
+            <i class="fa-solid fa-trash-can" data-bs-toggle="modal" data-bs-target="#myModal" id="submit"></i>
+          </form>
+        </td>
+        <!-- <td><i class="fa-solid fa-trash-can" data-bs-toggle="modal" data-bs-target="#myModal"></i></td> -->
       </tr>
+
+      <?php
+            }
+      ?>
       
 <!-- The Modal -->
 <div class="modal" id="myModal">
@@ -56,9 +66,7 @@ $result=$result = mysqli_query($conn, $sql) or die("Query Failed");
       <!-- Modal body -->
       <div class="modal-body text-center">
         <h4>Are you want to delete this post?</h4>
-        <?php
-        echo $row['post_id']; 
-        ?>
+        <h4 id="modal_heading">badal</h4>
         <div class="mt-4">
           <button type="button" class="btn btn-outline-danger px-4 mx-2" data-bs-dismiss="modal">Cancle</button>
           <a type="button" class="btn btn-danger px-4 mx-2" href="delete2-post.php?id=<?php echo $row['post_id'] ?>">Delete</a>
@@ -68,9 +76,12 @@ $result=$result = mysqli_query($conn, $sql) or die("Query Failed");
   </div>
 </div>
 <!-- modal end -->
-<?php
-            }
-      ?>
+<script type="text/javascript">
+  $("#submit").click(function () { 
+            var name = $("#cat_id").val(); 
+            $("#modal_heading").html(name); 
+        }); 
+</script>
     
     </tbody>
   </table>
